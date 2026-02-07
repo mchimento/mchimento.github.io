@@ -11,6 +11,29 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background: #f4f7fb;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  background: #149ddd;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 a {
@@ -220,7 +243,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #eaf2f8; /* a slightly darker, more opaque blue-gray */
 }
 
 .section-title {
@@ -416,11 +439,11 @@ section {
   overflow: hidden;
  }
  .resume .resume-title {
-  margin-top: 0px;  
-  margin-bottom: 22px;  
+  margin-top: 0px;
+  margin-bottom: 22px;
  }
  .resume .section-title {
-  padding-bottom: 8px; 
+  padding-bottom: 8px;
  }
 }
 

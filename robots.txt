@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Prevent indexing of vendor demo pages
+Disallow: /assets/vendor/bootstrap-icons/index.html
+
+Sitemap: https://jmchimento.com/sitemap.xml

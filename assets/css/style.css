@@ -664,7 +664,6 @@ section {
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
-  float: none;
   transition: background 0.25s;
 }
 
@@ -684,7 +683,6 @@ section {
 }
 
 .services .title {
-  margin-left: 0;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 15px;
@@ -700,7 +698,6 @@ section {
 }
 
 .services .description {
-  margin-left: 0;
   line-height: 1.65;
   font-size: 13px;
   color: var(--text-muted);

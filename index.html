@@ -49,26 +49,32 @@
   <!-- ======= Header ======= -->
   <header id="header">
 
-      <div class="profile">
-        <img src="assets/img/face.jpeg" alt="Headshot of Jesus Mauricio Chimento" class="img-fluid rounded-circle" loading="lazy">
-        <h1 class="text-light"><a href="index.html">Jesus Mauricio Chimento</a></h1>
-        <p class="profile-tagline">PhD &middot; Software Developer</p>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/mchimento" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
-          <a href="https://se.linkedin.com/in/jmau-chimento" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
-        </div>
+    <div class="profile">
+      <img src="assets/img/face.jpeg" alt="Headshot of Jesus Mauricio Chimento" class="img-fluid rounded-circle" loading="lazy">
+      <h1 class="text-light"><a href="index.html">Jesus Mauricio Chimento</a></h1>
+      <p class="profile-tagline" data-i18n="profile-tagline">PhD &middot; Software Developer</p>
+      <div class="social-links mt-3 text-center">
+        <a href="https://github.com/mchimento" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+        <a href="https://se.linkedin.com/in/jmau-chimento" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
       </div>
+    </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#about" class="nav-link scrollto active"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-keyboard"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a></li>
-          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-edit"></i> <span>Education</span></a></li>
-          <li><a href="#publications" class="nav-link scrollto"><i class="bx bxs-book"></i> <span>Publications</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="#about" class="nav-link scrollto active"><i class="bx bx-user"></i> <span data-i18n="nav-about">About</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-keyboard"></i> <span data-i18n="nav-skills">Skills</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav-experience">Experience</span></a></li>
+        <li><a href="#education" class="nav-link scrollto"><i class="bx bx-edit"></i> <span data-i18n="nav-education">Education</span></a></li>
+        <li><a href="#publications" class="nav-link scrollto"><i class="bx bxs-book"></i> <span data-i18n="nav-publications">Publications</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span data-i18n="nav-contact">Contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
 
   </header><!-- End Header -->
 
@@ -79,7 +85,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About Me</h2>
+          <h2 data-i18n="about-title">About Me</h2>
         </div>
 
         <div class="row">
@@ -87,15 +93,15 @@
             <img src="assets/img/me.jpeg" class="img-fluid" alt="Jesus Mauricio Chimento portrait" loading="lazy">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>PhD in Computer Science &amp; Software Developer</h3>
+            <h3 data-i18n="about-subtitle">PhD in Computer Science &amp; Software Developer</h3>
             <br>
-            <p>I'm a software developer based in Gothenburg, Sweden. I work at
+            <p data-i18n="about-p1">I'm a software developer based in Gothenburg, Sweden. I work at
                <a href="https://www.jeppesenforeflight.com/" target="_blank" rel="noopener noreferrer">Jeppesen ForeFlight</a>
                on their Crew Tracking system — a product that helps airlines stay operationally efficient during disruptions
                by giving operations teams tools to detect, resolve, and follow up on changes to crew plans when schedules
                don't go as planned.
             </p>
-            <p>Before moving into industry, I was a postdoctoral researcher at KTH in Stockholm, contributing to a project on
+            <p data-i18n="about-p2">Before moving into industry, I was a postdoctoral researcher at KTH in Stockholm, contributing to a project on
                <a href="https://people.kth.se/~dbro/projects.html" target="_blank" rel="noopener noreferrer">full-stack verification of programs synthesized from timed automata</a>.
                My PhD — from Chalmers University of Technology — focused on combining static and runtime verification of
                object-oriented software. That background in Formal Methods still shapes how I
@@ -112,14 +118,14 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>A summary of my technical skills and areas of expertise.</p>
+          <h2 data-i18n="skills-title">Skills</h2>
+          <p data-i18n="skills-desc">A summary of my technical skills and areas of expertise.</p>
         </div>
 
         <div class="skills-grid">
 
           <div class="skill-category">
-            <h4>Programming Languages</h4>
+            <h4 data-i18n="skills-cat-languages">Programming Languages</h4>
             <div class="skill-tags">
               <span class="skill-tag featured">Haskell</span>
               <span class="skill-tag featured">Python</span>
@@ -129,7 +135,7 @@
           </div>
 
           <div class="skill-category">
-            <h4>Testing &amp; Verification</h4>
+            <h4 data-i18n="skills-cat-testing">Testing &amp; Verification</h4>
             <div class="skill-tags">
               <span class="skill-tag featured">Test Driven Development</span>
               <span class="skill-tag featured">Testing</span>
@@ -138,7 +144,7 @@
           </div>
 
           <div class="skill-category">
-            <h4>Development Practices</h4>
+            <h4 data-i18n="skills-cat-practices">Development Practices</h4>
             <div class="skill-tags">
               <span class="skill-tag featured">Git</span>
               <span class="skill-tag">CI/CD</span>
@@ -147,7 +153,7 @@
           </div>
 
           <div class="skill-category">
-            <h4>Tools &amp; Other</h4>
+            <h4 data-i18n="skills-cat-tools">Tools &amp; Other</h4>
             <div class="skill-tags">
               <span class="skill-tag">LaTeX</span>
               <span class="skill-tag">HTML / CSS</span>
@@ -165,27 +171,26 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Experience</h2>
-          <p> </p>
+          <h2 data-i18n="experience-title">Experience</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" data-i18n="experience-professional">Professional Experience</h3>
             <div class="resume-item">
               <h4>Software Application Developer</h4>
-              <h5>November 2025 - ongoing </h5>
+              <h5>November 2025 - ongoing</h5>
               <p><em>Jeppesen ForeFlight. Gothenburg, Sweden</em></p>
               <ul>
-                <li>Currently I am working as a software application developer on the Jeppesen Crew Tracking system.</li>
+                <li data-i18n="job-foreflight-current">Currently I am working as a software application developer on the Jeppesen Crew Tracking system.</li>
               </ul>
             </div>
             <div class="resume-item">
               <h4>Software Application Developer</h4>
-              <h5>October 2021 - November 2025 </h5>
+              <h5>October 2021 - November 2025</h5>
               <p><em>Jeppesen Systems, a Boeing company. Gothenburg, Sweden</em></p>
               <ul>
-                <li>Worked developing software used in the aviation industry, e.g. Jeppesen Crew Tracking system.</li>
+                <li data-i18n="job-foreflight-prev">Worked developing software used in the aviation industry, e.g. Jeppesen Crew Tracking system.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -193,9 +198,9 @@
               <h5>2019 - 2021</h5>
               <p><em>KTH University, Stockholm, Sweden</em></p>
               <ul>
-                <li>Research project regarding full-stack verification of programs synthesized from timed automata. </li>
-                <li>My key achievements were the implementation of a model checker for timed automata, and formally verifying that the model checker is sound.</li>
-                <li>All this work was developed using the COQ proof assistant.</li>
+                <li data-i18n="job-kth-1">Research project regarding full-stack verification of programs synthesized from timed automata.</li>
+                <li data-i18n="job-kth-2">My key achievements were the implementation of a model checker for timed automata, and formally verifying that the model checker is sound.</li>
+                <li data-i18n="job-kth-3">All this work was developed using the COQ proof assistant.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -203,14 +208,12 @@
               <h5>2013 - 2016</h5>
               <p><em>Chalmers University of Technology, Gothenburg, Sweden</em></p>
               <ul>
-                <li>Research project regarding the combination of static and runtime verification techniques.</li>
-                <li>I developed in Haskell a tool, called <a href="https://github.com/starvoors/StaRVOOrS-tool">StaRVOOrS</a>,
+                <li data-i18n="job-chalmers-1">Research project regarding the combination of static and runtime verification techniques.</li>
+                <li data-i18n="job-chalmers-2">I developed in Haskell a tool, called <a href="https://github.com/starvoors/StaRVOOrS-tool">StaRVOOrS</a>,
                     which combines the use of the runtime verifier LARVA with the (static) deductive verifier KeY.
-                    Both verifiers target Java programs.
-                </li>
-                <li>I extended the APIs of the verifiers mentioned above in order to support their use within StarVOOrS,
-                    and added specific functionalities for the combined verification process. Both APIs are implemented in Java.
-                </li>
+                    Both verifiers target Java programs.</li>
+                <li data-i18n="job-chalmers-3">I extended the APIs of the verifiers mentioned above in order to support their use within StarVOOrS,
+                    and added specific functionalities for the combined verification process. Both APIs are implemented in Java.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -218,11 +221,10 @@
               <h5>2011 - 2013</h5>
               <p><em>Instituto de Computación, Montevideo, Uruguay</em></p>
               <ul>
-                <li>Research project regarding the formalisation and verification of an idealised model of a virtualisation platform.</li>
-                <li>My key achievement in this project was specifying and verifying the correctness of the memory management of an idealized model of a
-                    virtualization platform, in the presence of actions executed by the underlying system.
-                </li>
-                <li>All this work was developed using the COQ proof assistant.</li>
+                <li data-i18n="job-virtualcert-1">Research project regarding the formalisation and verification of an idealised model of a virtualisation platform.</li>
+                <li data-i18n="job-virtualcert-2">My key achievement in this project was specifying and verifying the correctness of the memory management of an idealized model of a
+                    virtualization platform, in the presence of actions executed by the underlying system.</li>
+                <li data-i18n="job-virtualcert-3">All this work was developed using the COQ proof assistant.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -230,25 +232,23 @@
               <h5>2010</h5>
               <p><em>INRIA, Nancy, France</em></p>
               <ul>
-                <li>During this internship I checked the effectiveness of using the language Pluscal 2.0 for specifying distributed algorithms, tested its compiler,
-                    and fixed several bugs spotted during the testing phase.
-                </li>
-                <li>This compiler is implemented in Java.</li>
+                <li data-i18n="job-inria-1">During this internship I checked the effectiveness of using the language Pluscal 2.0 for specifying distributed algorithms, tested its compiler,
+                    and fixed several bugs spotted during the testing phase.</li>
+                <li data-i18n="job-inria-2">This compiler is implemented in Java.</li>
               </ul>
             </div>
           </div>
 
-
           <div class="col-lg-6" data-aos-delay="100">
-            <h3 class="resume-title">Teaching Experience</h3>
-            <p><em>I have worked as a teacher both in academy and the software industry.
+            <h3 class="resume-title" data-i18n="experience-teaching">Teaching Experience</h3>
+            <p><em data-i18n="teaching-intro">I have worked as a teacher both in academia and the software industry.
                    Below you can find a list of the different courses I have taught.
             </em></p>
             <div class="resume-item">
-              <h4>Chalmers University of Technology (Sweden)</h4>
-              <h5>2022 - November 2025</h5>
+              <h4>Jeppesen Foreflight (Sweden)</h4>
+              <h5>November 2022 - November 2026</h5>
               <ul>
-                <li>Atrium GUI configuration</li>
+                <li data-i18n="teach-atrium">Atrium GUI configuration</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -289,7 +289,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Education</h2>
+          <h2 data-i18n="education-title">Education</h2>
         </div>
 
         <div class="row">
@@ -299,26 +299,20 @@
               <h5>2013 - 2019</h5>
               <p><em>Chalmers University of Technology, Gothenburg, Sweden</em></p>
               <ul style="list-style-type:disc;">
-                 <li> PhD degree in Computer Science
-                 <li> Thesis title: <a href="https://research.chalmers.se/publication/510216">
-                      Combined static and dynamic verification of object oriented software through partial proofs</a>
-                 </li>
-                 <li> Supervised by: <a href="http://www.cse.chalmers.se/~ahrendt/">Wolfgang Ahrendt</a>  (main supervisor),
-                      and <a href="http://www.cse.chalmers.se/~gersch/">Gerardo Schneider</a>
-                 </li>
+                <li data-i18n="edu-phd-degree">PhD degree in Computer Science</li>
+                <li><span data-i18n="edu-thesis-label">Thesis title:</span> <a href="https://research.chalmers.se/publication/510216">Combined static and dynamic verification of object oriented software through partial proofs</a></li>
+                <li><span data-i18n="edu-supervised-label">Supervised by:</span> <a href="http://www.cse.chalmers.se/~ahrendt/">Wolfgang Ahrendt</a> (main supervisor),
+                    and <a href="http://www.cse.chalmers.se/~gersch/">Gerardo Schneider</a></li>
               </ul>
             </div>
             <div class="resume-item">
-            <h4>Licentiate in Computer Science</h4>
+              <h4>Licentiate in Computer Science</h4>
               <h5>2013 - 2016</h5>
               <p><em>Chalmers University of Technology, Gothenburg, Sweden</em></p>
               <ul style="list-style-type:disc;">
-                 <li> Thesis title: <a href="https://research.chalmers.se/en/publication/248733">
-                      Unified Static and Runtime Verification of Object-Oriented Software</a>
-                 </li>
-                 <li> Supervised by: <a href="http://www.cse.chalmers.se/~ahrendt/">Wolfgang Ahrendt</a>  (main supervisor),
-                      and <a href="http://www.cse.chalmers.se/~gersch/">Gerardo Schneider</a>
-                 </li>
+                <li><span data-i18n="edu-thesis-label">Thesis title:</span> <a href="https://research.chalmers.se/en/publication/248733">Unified Static and Runtime Verification of Object-Oriented Software</a></li>
+                <li><span data-i18n="edu-supervised-label">Supervised by:</span> <a href="http://www.cse.chalmers.se/~ahrendt/">Wolfgang Ahrendt</a> (main supervisor),
+                    and <a href="http://www.cse.chalmers.se/~gersch/">Gerardo Schneider</a></li>
               </ul>
             </div>
             <div class="resume-item">
@@ -326,16 +320,12 @@
               <h5>2005 - 2012</h5>
               <p><em>Universidad Nacional de Rosario, Rosario, Argentina</em></p>
               <ul style="list-style-type:disc;">
-                 <li> 5-years computer science degree + final Thesis, equivalent to a Master degree in the EU system</li>
-                 <li> Thesis Title: <a href="https://dcc.fceia.unr.edu.ar/es/lcc/tesinas-grado/tesinas/an%C3%A1lisis-de-modelos-de-memoria-en-plataformas-de-virtualizaci%C3%B3n">
-                      Memory Models Analysis in Virtualization Platforms.
-                      Formalizing a Functional Prototype of such a Platform with Cache and TLB. </a>
-                      <br>
-                      (available only in Spanish)
-                 </li>
-                 <li> Supervised by: <a href="https://www.fing.edu.uy/~cluna/">Carlos Luna</a> (main supervisor),
-                      and <a href="https://www.fing.edu.uy/~gustun/">Gustavo Betarte</a>
-                 </li>
+                <li data-i18n="edu-lic-arg-desc">5-years computer science degree + final Thesis, equivalent to a Master degree in the EU system</li>
+                <li><span data-i18n="edu-thesis-label">Thesis Title:</span> <a href="https://dcc.fceia.unr.edu.ar/es/lcc/tesinas-grado/tesinas/an%C3%A1lisis-de-modelos-de-memoria-en-plataformas-de-virtualizaci%C3%B3n">Memory Models Analysis in Virtualization Platforms.
+                    Formalizing a Functional Prototype of such a Platform with Cache and TLB.</a>
+                    <br><span data-i18n="edu-lic-arg-available">(available only in Spanish)</span></li>
+                <li><span data-i18n="edu-supervised-label">Supervised by:</span> <a href="https://www.fing.edu.uy/~cluna/">Carlos Luna</a> (main supervisor),
+                    and <a href="https://www.fing.edu.uy/~gustun/">Gustavo Betarte</a></li>
               </ul>
             </div>
           </div>
@@ -350,8 +340,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Publications</h2>
-          <p>Throughout my academic life I have published, in collaboration with some colleagues, the following papers:</p>
+          <h2 data-i18n="publications-title">Publications</h2>
+          <p data-i18n="publications-desc">Throughout my academic life I have published, in collaboration with some colleagues, the following papers:</p>
         </div>
 
         <div class="publications-grid">
@@ -425,7 +415,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2 data-i18n="contact-title">Contact</h2>
         </div>
 
         <div class="row g-4 align-items-stretch">
@@ -435,21 +425,21 @@
               <div class="info-item">
                 <i class="bi bi-geo-alt"></i>
                 <div class="info-text">
-                  <h4>Location</h4>
+                  <h4 data-i18n="contact-location-label">Location</h4>
                   <p>Göteborg, Sweden</p>
                 </div>
               </div>
               <div class="info-item">
                 <i class="bi bi-envelope"></i>
                 <div class="info-text">
-                  <h4>Email</h4>
+                  <h4 data-i18n="contact-email-label">Email</h4>
                   <p>jesus.m.chimento(at)jepp.org</p>
                 </div>
               </div>
               <div class="info-item">
                 <i class="bi bi-phone"></i>
                 <div class="info-text">
-                  <h4>Phone</h4>
+                  <h4 data-i18n="contact-phone-label">Phone</h4>
                   <p>(+46) 031&thinsp;722&thinsp;6366<br>(+46) 073&thinsp;901&thinsp;8366</p>
                 </div>
               </div>
@@ -477,6 +467,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
 
 </body>
 
